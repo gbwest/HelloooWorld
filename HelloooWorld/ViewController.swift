@@ -13,8 +13,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var backGround: UIImageView!
     @IBOutlet weak var welcomeBtn: UIButton!
     @IBOutlet weak var titleImg: UIImageView!
+    @IBOutlet weak var helloBtn: UIButton!
 
-    
+
     
     
     
@@ -33,9 +34,19 @@ class ViewController: UIViewController {
         welcomeBtn.isHidden = true
         backGround.isHidden = false
         titleImg.isHidden = false
-    
+        helloBtn.isHidden = false
         
     }
 
+
+    @IBAction func helloPressed(_ sender: Any) {
+        
+        welcomeBtn.isHidden = false
+        backGround.isHidden = true
+        titleImg.isHidden = true
+        helloBtn.isHidden = true
+        
+    }
+    
 }
 
