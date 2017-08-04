@@ -30,7 +30,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func welcomePressed(_ sender: Any) {
-        
+        // First action available to user
         welcomeBtn.isHidden = true
         backGround.isHidden = false
         titleImg.isHidden = false
