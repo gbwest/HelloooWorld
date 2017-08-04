@@ -40,7 +40,7 @@ class ViewController: UIViewController {
 
 
     @IBAction func helloPressed(_ sender: Any) {
-        
+        // This allows app to restart
         welcomeBtn.isHidden = false
         backGround.isHidden = true
         titleImg.isHidden = true
