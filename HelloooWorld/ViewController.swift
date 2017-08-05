@@ -15,7 +15,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var titleImg: UIImageView!
     @IBOutlet weak var helloBtn: UIButton!
 
-
+    @IBOutlet weak var infoBox: UILabel!
+    
     
     
     
@@ -35,10 +36,14 @@ class ViewController: UIViewController {
         backGround.isHidden = false
         titleImg.isHidden = false
         helloBtn.isHidden = false
-        
+        infoBox.isHidden = true
     }
 
-
+    @IBAction func infoPressed(_ sender: Any) {
+        infoBox.isHidden = false
+        infoBox.text = "These services brought to you by me"
+    }
+    
     @IBAction func helloPressed(_ sender: Any) {
         // This allows app to restart
         welcomeBtn.isHidden = false

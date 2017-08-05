@@ -51,12 +51,30 @@
                                     <action selector="welcomePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9VG-yg-U9l"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2cV-jC-1se">
+                                <rect key="frame" x="172" y="403" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Info">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="infoPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xde-R8-4zb"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TUY-as-IIN">
+                                <rect key="frame" x="134" y="441" width="122" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
                         <outlet property="backGround" destination="frd-nU-GQ4" id="m1b-wF-TKr"/>
                         <outlet property="helloBtn" destination="jhw-9c-tqX" id="qbV-E9-agK"/>
+                        <outlet property="infoBox" destination="TUY-as-IIN" id="y4U-7T-aMO"/>
                         <outlet property="titleImg" destination="jPx-ll-Ya7" id="7yT-az-hdh"/>
                         <outlet property="welcomeBtn" destination="Zol-nK-4ps" id="kZ5-LD-f6H"/>
                     </connections>
